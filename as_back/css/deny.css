@@ -1,0 +1,97 @@
+
+#wrapper {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 260px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left:250px;
+    width: 0;
+    margin-left: -240px;
+    overflow-y: auto;
+    background: #FFFF;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+#menu-toggle {
+	
+    position: inherit;	
+	}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 260px;
+}
+
+.judul {
+	font-size:20px;
+	color:#537CB4;
+}
+
+#page-content-wrapper {
+	    border-left :1px solid #eee;
+    width: 100%;
+    position: static;
+    padding-left: 20px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: static;
+    margin-right: -250px;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding-left: 10px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+	
+	#menu-toggle {
+	 display:none;	
+	}
+	
+	
+}
+
+.list-unstyled.desc li, 
+.list-unstyled.no-desc li {
+  background: url('http://d26mw3lpqa99qj.cloudfront.net/prod-fool/sell/yes-15d4ba569f9f4beb7d8cfd8adc8ed886.png') no-repeat;
+  padding:0 0 5% 45px;
+}
+
+/* change the no-love image */
+.list-unstyled.no-desc li {
+  background: url('http://d26mw3lpqa99qj.cloudfront.net/prod-fool/sell/yes-15d4ba569f9f4beb7d8cfd8adc8ed886.png') no-repeat;
+}
