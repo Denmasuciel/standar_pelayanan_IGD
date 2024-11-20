@@ -126,7 +126,7 @@
 		tampildata();
 		setInterval(function() {
 			reload_table();
-		}, 60000);
+		}, 120000);
 	});
 
 	function tampildata() {
@@ -164,18 +164,12 @@
 					// className: "text-center"
 				}
 			],
-			"aoColumnDefs": [{				
-				// 	"targets": [0],
-				// 	"visible": false
-				"target":[6],
-				"render":function(data, type, row) {
-                    // Format salary with a dollar sign and commas
-                    // return '$' + parseFloat(data.jam).toLocaleString();
-					return data / 60;
-                }
+			"aoColumnDefs": [{
+				"targets": [6],
+				"visible": false,				
 			}],
 			"order": [
-				[6,"desc"]
+				[6, "desc"]
 			],
 			"rowCallback": function(row, data, index) {
 				// Assuming the score is in the second column (index 1)
