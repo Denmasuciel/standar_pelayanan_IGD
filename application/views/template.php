@@ -43,6 +43,10 @@ $session = $this->session->sess_user;
         .low-score {
             background-color: #c8e6c9; /* Light green */
         }
+        .lowmid-score {
+            /* background-color: #008000; Hijau tua */
+            background-color: #009000; /* Hijau tua */
+        }
         .high-score {
             background-color: #ffccbc; /* Light red */
         }

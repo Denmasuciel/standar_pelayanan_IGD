@@ -166,7 +166,7 @@
 			],
 			"aoColumnDefs": [{
 				"targets": [6],
-				"visible": false,				
+				"visible": false,
 			}],
 			"order": [
 				[6, "desc"]
@@ -175,9 +175,11 @@
 				// Assuming the score is in the second column (index 1)
 				var score = parseInt(data.jam);
 
-				if (score >= 0 && score <= 180) {
+				if (score >= 0 && score <= 5) {
 					$(row).addClass('low-score');
-				} else if (score >= 181 && score <= 359) {
+				} else if (score >= 6 && score <= 120) {
+					$(row).addClass('lowmid-score');
+				} else if (score >= 121 && score <= 359) {
 					$(row).addClass('medium-score');
 				} else {
 					$(row).addClass('high-score');
